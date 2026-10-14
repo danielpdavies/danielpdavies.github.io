@@ -196,6 +196,3 @@ dl.contact dd { margin: 0; overflow-wrap: anywhere; }
 
 /* First section directly under the masthead (home page) */
 main .wrap > .sec:first-child { margin-top: 0; }
-.portrait{float:right;margin:0 0 1rem 1.5rem}
-.portrait img{display:block;width:200px;height:200px;border-radius:50%;object-fit:cover}
-@media (max-width:600px){.portrait{float:none;display:block;margin:0 auto 1.25rem;width:160px}.portrait img{width:160px;height:160px}}
