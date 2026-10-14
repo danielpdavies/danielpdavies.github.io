@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototype — Daniel P Davies FHEA</title>
+<meta name="description" content="A prototype lecturer-fed, module-specific feedback agent built for doctoral research. Tested on sample materials only; not yet evaluated with students.">
+<meta name="author" content="Daniel P Davies">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Daniel P Davies FHEA">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Prototype — Daniel P Davies FHEA">
+<meta property="og:description" content="A prototype lecturer-fed, module-specific feedback agent built for doctoral research. Tested on sample materials only; not yet evaluated with students.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://danielpdavies.github.io/prototype.html">
+<meta property="og:url" content="https://danielpdavies.github.io/prototype.html">
+<meta property="og:image" content="https://danielpdavies.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Daniel P Davies FHEA: assessment, feedback and learning design after generative AI">
+<meta name="theme-color" content="#1f3550">
+<link rel="preload" href="assets/fonts/SourceSerifPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-inner">
+      <p class="site-name"><a href="index.html">Daniel P Davies <span class="pn">FHEA</span></a></p>
+      <p class="identity">Assessment, feedback and learning design after generative AI</p>
+      <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="outputs.html">Outputs</a></li>
+        <li><a href="prototype.html" aria-current="page">Prototype</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <div class="wrap">
+<div class="page-head">
+<h1 class="page-title">Prototype</h1>
+<p class="standfirst">What the prototype feedback agent does and, just as importantly, what it has not yet done.</p>
+</div>
+<section class="sec" aria-labelledby="s-what-it-is">
+  <h2 id="s-what-it-is">What it is</h2>
+  <div class="body">
+<p>As part of my doctoral project I have designed and built a prototype of a lecturer-fed, module-specific feedback agent. It uses retrieval-augmented generation (RAG) over module materials chosen by the lecturer, and it is bound never to complete assessed work or invent references.</p>
+  </div>
+</section>
+<section class="sec" aria-labelledby="s-demonstration">
+  <h2 id="s-demonstration">Demonstration</h2>
+  <div class="body">
+<figure class="placeholder">
+      <div class="frame"><p>A short recorded demonstration, using sample module materials only, will be added here.</p></div>
+      <figcaption>Demonstration to follow, with captions and a transcript.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="sec" aria-labelledby="s-what-it-does">
+  <h2 id="s-what-it-does">What it does</h2>
+  <div class="body">
+<ul class="dash">
+      <li>Answers only from the module materials it has been given, and cites the section each answer draws on. When a question falls outside those materials, it says so.</li>
+      <li>Gives graduated help, tracked separately for each topic: a hint first, then a guiding question, then a worked partial example on a different case, then a pointer to the marking criteria. A student who says they have understood resets that topic.</li>
+      <li>Uses layered checks against requests to write assessed work, including paraphrased and role-play requests, and against requests for references that are not in the module materials. It points students back to the brief and the rubric instead.</li>
+      <li>Offers a plain-English mode for students working in an additional language.</li>
+      <li>Lets the lecturer set a tone (warmth, directness, formality) that changes style only and cannot override the rules above.</li>
+      <li>Keeps research records under pseudonymous IDs, held separately from login details; the lecturer’s view shows aggregate use only.</li>
+      <li>Runs locally on freely available language models, with no paid service required.</li>
+    </ul>
+  </div>
+</section>
+<section class="sec" aria-labelledby="s-status">
+  <h2 id="s-status">Status</h2>
+  <div class="body">
+<ul class="dash">
+      <li>Version 2, October 2026.</li>
+      <li>Tested only on sample module materials prepared for testing, not on real course content. A set of 43 scripted tests (28 conversation tests and 15 unit tests) passes on that sample.</li>
+      <li>Not evaluated with students. No student data have been collected.</li>
+      <li>Ethical approval, and permission from the institution concerned, are required before any use with students.</li>
+    </ul>
+  </div>
+</section>
+<section class="sec" aria-labelledby="s-known-limitations">
+  <h2 id="s-known-limitations">Known limitations</h2>
+  <div class="body">
+<ul class="dash">
+      <li>Answers take roughly 8 to 14 seconds each when the main model runs on an ordinary processor.</li>
+      <li>The checks against writing assessed work can still be fooled by creative phrasing, and may over-block unusual wording.</li>
+      <li>It runs locally as a single process, without the password reset, rate limiting or secure connection (HTTPS) that a live service would need.</li>
+    </ul>
+    <p>The prototype is not open source and its code is not public.</p>
+  </div>
+</section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Daniel P Davies. Last updated 14 October 2026.</p>
+    <p>Set in Source Serif Pro and Source Sans Pro, used under the <a href="assets/fonts/OFL-source-serif.txt">SIL Open Font License</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
