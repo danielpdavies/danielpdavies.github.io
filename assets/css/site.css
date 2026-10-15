@@ -208,3 +208,8 @@ main .wrap > .sec:first-child { margin-top: 0; }
 
 .ex-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin-top:1rem}.ex-grid figure{margin:0;border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fff}.ex-grid img{display:block;width:100%;height:200px;object-fit:cover;object-position:top}.ex-grid figcaption{padding:.6rem .75rem;font-size:.9rem;line-height:1.4}
 .ex-grid .why{display:block;margin-top:.4rem;color:#444;font-size:.85rem}.refs{font-size:.85rem;padding-left:1.1rem}.refs li{margin:.3rem 0}
+/* Post-nominals: keep together, drop to their own line on narrow screens */
+.pn { white-space: nowrap; }
+@media (max-width: 600px) {
+  .pn { display: block; margin-left: 0; margin-top: 0.2em; font-size: 0.6em; }
+}
