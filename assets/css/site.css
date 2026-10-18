@@ -211,7 +211,7 @@ main .wrap > .sec:first-child { margin-top: 0; }
 /* Post-nominals: keep together, drop to their own line on narrow screens */
 .pn { white-space: nowrap; }
 @media (max-width: 600px) {
-  .pn { display: block; margin-left: 0; margin-top: 0.2em; font-size: 0.6em; }
+  .pn { display: block; margin-left: 0; margin-top: 0.2em; font-size: 0.6em; white-space: normal; letter-spacing: 0.03em; }
 }
 
 .showcase{margin:1rem 0 1.75rem;max-width:762px}.showcase img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;background:#fff}.showcase figcaption{font-family:var(--sans);font-size:.9rem;color:var(--muted);margin-top:.5rem}
