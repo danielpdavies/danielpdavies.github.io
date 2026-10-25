@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prototype — Daniel P Davies FHEA</title>
+<title>Innovation showcase — Daniel P Davies MSc PGCE PGCHE FHEA CDMP (DMI)</title>
 <meta name="description" content="A prototype lecturer-fed, module-specific feedback agent built for doctoral research. Tested on sample materials only; not used with students.">
 <meta name="author" content="Daniel P Davies">
 <meta name="robots" content="noai, noimageai">
 <meta name="copyright" content="© 2026 Daniel P Davies. All rights reserved.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Daniel P Davies FHEA">
+<meta property="og:site_name" content="Daniel P Davies MSc PGCE PGCHE FHEA CDMP (DMI)">
 <meta property="og:locale" content="en_GB">
-<meta property="og:title" content="Prototype — Daniel P Davies FHEA">
+<meta property="og:title" content="Innovation showcase — Daniel P Davies MSc PGCE PGCHE FHEA CDMP (DMI)">
 <meta property="og:description" content="A prototype lecturer-fed, module-specific feedback agent built for doctoral research. Tested on sample materials only; not used with students.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://danielpdavies.github.io/prototype.html">
@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://danielpdavies.github.io/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Daniel P Davies FHEA: assessment, feedback and learning design after generative AI">
+<meta property="og:image:alt" content="Daniel P Davies MSc PGCE PGCHE FHEA CDMP (DMI): assessment, feedback and learning design after generative AI">
 <meta name="theme-color" content="#1f3550">
 <link rel="preload" href="assets/fonts/SourceSerifPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
@@ -37,9 +37,11 @@
         <li><a href="about.html">About</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="philosophy.html">Philosophy</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
         <li><a href="outputs.html">Outputs</a></li>
         <li><a href="bids.html">Funding bids</a></li>
-        <li><a href="prototype.html" aria-current="page">Prototype</a></li>
+        <li><a href="prototype.html" aria-current="page">Innovation</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -50,79 +52,87 @@
 <main id="main" tabindex="-1">
   <div class="wrap">
 <div class="page-head">
-<h1 class="page-title">Prototype</h1>
-<p class="standfirst">What the prototype feedback agent does, and what comes next.</p>
-</div>
-<section class="sec" aria-labelledby="s-what-it-is">
+<h1 class="page-title">Innovation showcase</h1>
+<p class="standfirst">A module-specific feedback agent, built for my doctoral research: what it does, the principles behind it and the guardrails it works within.</p>
+</div><section class="sec" aria-labelledby="s-what-it-is">
   <h2 id="s-what-it-is">What it is</h2>
   <div class="body">
-<p>As part of my doctoral project I have designed and built a prototype of a lecturer-fed, module-specific feedback agent. It uses retrieval-augmented generation (RAG) over module materials chosen by the lecturer, and it is bound never to complete assessed work or invent references.</p>
+<p>As part of my PhD I have designed and built a prototype of a lecturer-fed, module-specific feedback agent. It uses retrieval-augmented generation (RAG): before it answers, it retrieves from materials the lecturer has chosen for the module, such as the syllabus, lecture notes, rubrics, criteria and exemplars. It is meant to be there when students study, including late at night, for content questions, clarifying a brief, feedback on a draft and practice.</p>
+    <p>The problem it addresses is a mismatch rather than a shortage of tools. Students already use generic AI, but its answers are often unaligned with the module&rsquo;s outcomes and criteria. A tool grounded in the lecturer&rsquo;s own materials, which coaches rather than writes, is my answer to that gap.</p>
   </div>
-</section>
-<section class="sec" aria-labelledby="s-demonstration">
-  <h2 id="s-demonstration">Demonstration</h2>
-  <div class="body">
-<p>Screenshots from the prototype (v2.2-demo), using sample module materials only. Each image carries a visible copyright watermark. A short recorded demonstration with captions and a transcript will be added later.</p>
-    <div class="gallery shots" aria-label="Prototype screenshots">
-      <figure>
-        <img src="assets/img/prototype/00-architecture.png" alt="Architecture diagram of the lecturer-fed, module-specific feedback agent" width="1200" height="675" loading="lazy">
-        <figcaption>Architecture: lecturer materials, retrieval and the help ladder.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/prototype/02-grounded-answer.png" alt="Chat screen showing a grounded answer with a citation to module materials" width="1200" height="675" loading="lazy">
-        <figcaption>Grounded answer with a citation to the module materials.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/prototype/03-ladder-hint.png" alt="Chat screen showing the first step of the graduated help ladder, a hint" width="1200" height="675" loading="lazy">
-        <figcaption>Help ladder: hint first.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/prototype/06-integrity-refusal.png" alt="Chat screen refusing a request to write assessed work" width="1200" height="675" loading="lazy">
-        <figcaption>Integrity check: refusal to write assessed work.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/prototype/09-lecturer-tools.png" alt="Lecturer tools screen for managing module materials and tone" width="1200" height="675" loading="lazy">
-        <figcaption>Lecturer tools: materials and tone.</figcaption>
-      </figure>
-      <figure>
-        <img src="assets/img/prototype/11-dashboard-charts-csv.png" alt="Lecturer dashboard with aggregate use charts and CSV export" width="1200" height="675" loading="lazy">
-        <figcaption>Lecturer dashboard: aggregate use only.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-<section class="sec" aria-labelledby="s-what-it-does">
-  <h2 id="s-what-it-does">What it does</h2>
+</section><section class="sec" aria-labelledby="s-principles">
+  <h2 id="s-principles">Design principles</h2>
   <div class="body">
 <ul class="dash">
-      <li>Answers only from the module materials it has been given, and cites the section each answer draws on. When a question falls outside those materials, it says so.</li>
-      <li>Gives graduated help, tracked separately for each topic: a hint first, then a guiding question, then a worked partial example on a different case, then a pointer to the marking criteria. A student who says they have understood resets that topic.</li>
-      <li>Uses layered checks against requests to write assessed work, including paraphrased and role-play requests, and against requests for references that are not in the module materials. It points students back to the brief and the rubric instead.</li>
-      <li>Offers a plain-English mode for students working in an additional language.</li>
-      <li>Lets the lecturer set a tone (warmth, directness, formality) that changes style only and cannot override the rules above.</li>
-      <li>Keeps research records under pseudonymous IDs, held separately from login details; the lecturer’s view shows aggregate use only.</li>
-      <li>Runs locally on freely available language models, with no paid service required.</li>
+      <li><strong>Grounded in the module.</strong> It answers only from the materials it has been given and cites the section each answer draws on. When a question falls outside those materials, it says so.</li>
+      <li><strong>Hints before answers.</strong> Help is graduated and tracked for each topic: a hint, then a guiding question, then a worked partial example on a different case, then a pointer to the marking criteria. A student who says they have understood resets that topic.</li>
+      <li><strong>The standard stays visible.</strong> It sends students back to the brief and the rubric, so they practise judging their work against the criteria rather than handing that judgement over.</li>
+      <li><strong>Language support without a lower standard.</strong> A plain-English mode helps students working in an additional language without changing what the task asks of them.</li>
+      <li><strong>The lecturer stays in charge.</strong> The lecturer chooses the materials and can set a tone (warmth, directness, formality). Tone changes style only and cannot override the rules.</li>
+      <li><strong>Privacy by design.</strong> Research records use pseudonymous IDs held apart from login details, the lecturer&rsquo;s view shows aggregate use only, and it runs locally on freely available language models, with no paid service.</li>
     </ul>
   </div>
-</section>
-<section class="sec" aria-labelledby="s-status">
-  <h2 id="s-status">Status</h2>
+</section><section class="sec" aria-labelledby="s-guardrails">
+  <h2 id="s-guardrails">Guardrails</h2>
   <div class="body">
 <ul class="dash">
-      <li>Version 2, October 2026.</li>
-      <li>Tested only on sample module materials prepared for testing, not on real course content. A set of 43 scripted tests (28 conversation tests and 15 unit tests) passes on that sample.</li>
-      <li>Not used with students. No student data have been collected. Further testing is under way.</li>
-      <li>Ethical approval, and permission from the institution concerned, are required before any use with students.</li>
+      <li>Layered checks decline requests to write assessed work, including paraphrased and role-play requests.</li>
+      <li>It will not suggest references that are not in the module materials, because it cannot check that they are real.</li>
+      <li>Out-of-scope questions are flagged rather than answered from general knowledge.</li>
+      <li>Only sample module materials prepared for testing have been used so far. No student data have been collected.</li>
+      <li>Ethical approval, and permission from the institution concerned, will be in place before any use with students.</li>
     </ul>
   </div>
-</section>
-<section class="sec" aria-labelledby="s-known-limitations">
-  <h2 id="s-known-limitations">Known limitations</h2>
+</section><section class="sec" aria-labelledby="s-demonstration">
+  <h2 id="s-demonstration">Screens from the prototype</h2>
+  <div class="body">
+<p>Screenshots from version 2.2-demo, using sample module materials only. Each image carries a visible copyright watermark.</p>
+<div class="gallery shots" aria-label="Prototype screenshots">
+  <figure>
+    <img src="assets/img/prototype/00-architecture.png" alt="Architecture diagram of the lecturer-fed, module-specific feedback agent" width="1200" height="675" loading="lazy">
+    <figcaption>Architecture: lecturer materials, retrieval and the help ladder.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/img/prototype/02-grounded-answer.png" alt="Chat screen showing a grounded answer with a citation to module materials" width="1200" height="675" loading="lazy">
+    <figcaption>Grounded answer, citing the module materials it draws on.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/img/prototype/03-ladder-hint.png" alt="Chat screen showing the first step of the graduated help ladder, a hint" width="1200" height="675" loading="lazy">
+    <figcaption>Help ladder, step one: a hint.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/img/prototype/04-ladder-guiding-question.png" alt="Chat screen showing the second step of the help ladder, a guiding question" width="1200" height="675" loading="lazy">
+    <figcaption>Help ladder, step two: a guiding question.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/img/prototype/06-integrity-refusal.png" alt="Chat screen declining a request to write assessed work and pointing to the brief and rubric" width="1200" height="675" loading="lazy">
+    <figcaption>Integrity: it will not write assessed work, and points back to the brief and rubric.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/img/prototype/07-no-invented-references.png" alt="Chat screen listing only module sources and declining to suggest outside references" width="1200" height="675" loading="lazy">
+    <figcaption>No invented references: only sources held in the module materials.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/img/prototype/08-not-covered.png" alt="Chat screen saying that a question is not covered by the module materials" width="1200" height="675" loading="lazy">
+    <figcaption>Out of scope: it says when the materials do not cover a question.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/img/prototype/09-lecturer-tools.png" alt="Lecturer tools screen for managing module materials and tone" width="1200" height="675" loading="lazy">
+    <figcaption>Lecturer tools: materials and tone.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/img/prototype/11-dashboard-charts-csv.png" alt="Lecturer dashboard with aggregate use charts and CSV export" width="1200" height="675" loading="lazy">
+    <figcaption>Lecturer dashboard: aggregate use only.</figcaption>
+  </figure>
+</div>
+  </div>
+</section><section class="sec" aria-labelledby="s-status">
+  <h2 id="s-status">Status and next steps</h2>
   <div class="body">
 <ul class="dash">
-      <li>Answers take roughly 8 to 14 seconds each when the main model runs on an ordinary processor.</li>
-      <li>The checks against writing assessed work can still be fooled by creative phrasing, and may over-block unusual wording.</li>
-      <li>It runs locally as a single process, without the password reset, rate limiting or secure connection (HTTPS) that a live service would need.</li>
+      <li>Version 2, October 2026. A set of 43 scripted tests (28 conversation tests and 15 unit tests) passes on the sample materials.</li>
+      <li>Further testing is under way before any classroom use. Next steps include faster responses (answers currently take about 8 to 14 seconds on an ordinary processor), more robust checks against unusual phrasing, and the password reset, rate limiting and secure connection that a live service needs.</li>
+      <li>The agent is the design artefact for my doctoral action research, which will evaluate it with Level 4 international business students across plan&ndash;act&ndash;observe&ndash;reflect cycles. See <a href="research.html">Research</a>.</li>
     </ul>
     <p>The prototype is not open source and its code is not public.</p>
   </div>
@@ -132,7 +142,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>&copy; 2026 Daniel P Davies. All rights reserved. No reproduction or AI training use without written permission. <a href="copyright.html">Terms of use and copyright</a>.</p>
-    <p>Last updated 18 October 2026. ORCID: <a href="https://orcid.org/0009-0007-2723-8894">0009-0007-2723-8894</a></p>
+    <p>Last updated 25 October 2026. ORCID: <a href="https://orcid.org/0009-0007-2723-8894">0009-0007-2723-8894</a></p>
     <p>Set in Source Serif Pro and Source Sans Pro, used under the <a href="assets/fonts/OFL-source-serif.txt">SIL Open Font License</a>.</p>
   </div>
 </footer>
