@@ -460,3 +460,4 @@ dl.contact dd { margin: 0; overflow-wrap: anywhere; }
   .course-card:hover, .pointers li:hover, .btn:hover, .download:hover, .ex-grid figure:hover { transform: none; }
   .work-card:hover .work-media img, .course-card:hover .shot img { transform: none; }
 }
+.hero-title .hero-fhea{font-family:Inter,system-ui,sans-serif;font-size:.28em;font-weight:600;letter-spacing:.12em;vertical-align:.9em;margin-left:.35em;opacity:.85}
