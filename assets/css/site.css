@@ -195,6 +195,23 @@ dl.contact dd { margin: 0; overflow-wrap: anywhere; }
   .shots { grid-template-columns: 1fr 1fr; gap: 0 1.25rem; }
 }
 
+/* 13-item nav: even two rows (7 + 6) at desktop, natural wrap on small screens */
+.site-nav li.nav-break {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .site-nav li.nav-break {
+    display: block;
+    flex-basis: 100%;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    pointer-events: none;
+  }
+}
+
 @media print {
   .site-nav, .skip-link { display: none; }
   body { font-size: 11pt; }
@@ -215,3 +232,33 @@ main .wrap > .sec:first-child { margin-top: 0; }
 }
 
 .showcase{margin:1rem 0 1.75rem;max-width:762px}.showcase img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;background:#fff}.showcase figcaption{font-family:var(--sans);font-size:.9rem;color:var(--muted);margin-top:.5rem}
+
+
+/* Learning design portfolio */
+.course-card {
+  margin: 0 0 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.course-card:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+.course-card .shot { margin: 0 0 0.85rem; }
+.course-card .shot img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--rule); background: #fff;
+}
+.course-card h3 { margin: 0 0 0.2rem; }
+.course-card .audience {
+  margin: 0 0 0.55rem;
+  font-family: var(--sans); font-size: 0.95rem; color: var(--muted);
+  letter-spacing: 0.01em;
+}
+.course-card .techniques { font-size: 1rem; color: #2b2b2b; }
+.course-actions {
+  margin: 0.85rem 0 0;
+  font-family: var(--sans);
+}
+.course-actions a { margin-right: 1.2rem; }
+.course-actions .file-meta { display: inline; margin: 0 0 0 0.15rem; }
+.note { margin: 0 0 1.75rem; }
+.note:last-child { margin-bottom: 0; }
+.note h3 { margin-top: 0; }
