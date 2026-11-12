@@ -461,3 +461,13 @@ dl.contact dd { margin: 0; overflow-wrap: anywhere; }
   .work-card:hover .work-media img, .course-card:hover .shot img { transform: none; }
 }
 .hero-title .hero-fhea{font-family:Inter,system-ui,sans-serif;font-size:.28em;font-weight:600;letter-spacing:.12em;vertical-align:.9em;margin-left:.35em;opacity:.85}
+/* Hero contact strip (mirrors email signature) */
+.hero-contact{margin-top:var(--s-6);padding-top:var(--s-4);border-top:1px solid rgba(255,255,255,.16);max-width:46rem}
+.hc-role{margin:0 0 .75rem;font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#c9d6ee}
+.hc-role span{color:var(--gold-400);margin:0 .35em}
+.hc-links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.hc-links a{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .85rem;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:#fff;font-size:.9rem;text-decoration:none;background:rgba(255,255,255,.04);transition:background .2s,border-color .2s}
+.hc-links a:hover{background:rgba(255,255,255,.1);border-color:var(--gold-200)}
+.hc-links svg{width:1.05rem;height:1.05rem;color:var(--gold-200);flex:none}
+@media (max-width:480px){.hc-links a{font-size:.85rem}.hc-role{font-size:.72rem}}
+@media print{.hero-contact{border-color:#999}.hc-links a{color:#000;border:none}}
