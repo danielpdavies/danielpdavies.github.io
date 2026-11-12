@@ -1,7 +1,7 @@
 /* Daniel P Davies: academic and learning design portfolio
    Design system v2 (redesign branch).
    Display: Fraunces (variable, optical size). Text and UI: Inter (variable).
-   Anchor colour: navy #011A42, shared with the Rise course theme. */
+   Anchor colour: navy #0a2f2e, shared with the Rise course theme. */
 
 @font-face { font-family: "Fraunces"; src: url("../fonts/Fraunces-opsz.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
 @font-face { font-family: "Fraunces"; src: url("../fonts/Fraunces-opsz-Italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
@@ -9,15 +9,15 @@
 
 :root {
   /* Colour */
-  --navy-950: #010f29;
-  --navy-900: #011a42;   /* anchor */
-  --navy-800: #0b2a5b;
-  --navy-700: #1b3d73;
-  --navy-600: #2c5291;   /* 7.4:1 on white */
-  --sky-300: #9cc0ff;
-  --sky-100: #e7efff;
-  --gold-400: #e3b25b;   /* decorative accent only */
-  --gold-200: #f6e3bd;
+  --navy-950: #04201f;
+  --navy-900: #0a2f2e;   /* anchor */
+  --navy-800: #124140;
+  --navy-700: #1d5655;
+  --navy-600: #1f5f5b;   /* 7.4:1 on white */
+  --sky-300: #8fd3c9;
+  --sky-100: #e3f3f0;
+  --gold-400: #d98a5b;   /* decorative accent only */
+  --gold-200: #f4d6c2;
 
   --text: #0f1724;       /* 17:1 on paper */
   --text-2: #3d4757;     /* 9.3:1 on paper */
@@ -45,8 +45,8 @@
   /* Space and shape */
   --s-1: 0.5rem; --s-2: 0.75rem; --s-3: 1rem; --s-4: 1.5rem; --s-5: 2rem; --s-6: 3rem; --s-7: 4.5rem; --s-8: 7rem;
   --radius: 14px; --radius-sm: 8px; --radius-pill: 999px;
-  --shadow-1: 0 1px 2px rgba(1, 26, 66, 0.06), 0 1px 1px rgba(1, 26, 66, 0.04);
-  --shadow-2: 0 2px 4px rgba(1, 26, 66, 0.05), 0 12px 32px -8px rgba(1, 26, 66, 0.18);
+  --shadow-1: 0 1px 2px rgba(10, 47, 46, 0.06), 0 1px 1px rgba(10, 47, 46, 0.04);
+  --shadow-2: 0 2px 4px rgba(10, 47, 46, 0.05), 0 12px 32px -8px rgba(10, 47, 46, 0.18);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 
   --max: 76rem;
@@ -211,7 +211,7 @@ a:hover > .arrow { transform: translateX(3px); }
 }
 .hero::before { /* soft light */
   content: ""; position: absolute; inset: -30% -10% auto auto; width: 70vw; height: 70vw; max-width: 60rem; max-height: 60rem; z-index: -1;
-  background: radial-gradient(closest-side, rgba(110, 150, 230, 0.35), rgba(110, 150, 230, 0) 70%);
+  background: radial-gradient(closest-side, rgba(80, 175, 160, 0.35), rgba(80, 175, 160, 0) 70%);
 }
 .hero::after { /* fine grid */
   content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0.5;
@@ -228,9 +228,9 @@ a:hover > .arrow { transform: translateX(3px); }
   margin: 0; font-family: var(--display); font-weight: 500; font-size: var(--step-5); line-height: 0.98; letter-spacing: -0.025em;
   font-variation-settings: "opsz" 120;
 }
-.hero-pn { margin: var(--s-3) 0 0; font-size: clamp(0.85rem, 0.8rem + 0.35vw, 1.05rem); font-weight: 500; letter-spacing: 0.12em; color: #c9d6ee; }
+.hero-pn { margin: var(--s-3) 0 0; font-size: clamp(0.85rem, 0.8rem + 0.35vw, 1.05rem); font-weight: 500; letter-spacing: 0.12em; color: #c5ddd9; }
 .hero-lede {
-  margin: var(--s-5) 0 0; max-width: 34ch; font-family: var(--display); font-weight: 400; font-size: var(--step-3); line-height: 1.2; letter-spacing: -0.015em; color: #eef3ff;
+  margin: var(--s-5) 0 0; max-width: 34ch; font-family: var(--display); font-weight: 400; font-size: var(--step-3); line-height: 1.2; letter-spacing: -0.015em; color: #ecf6f4;
   font-variation-settings: "opsz" 72;
 }
 .hero-lede em { color: var(--gold-200); }
@@ -412,7 +412,7 @@ dl.contact dd { margin: 0; overflow-wrap: anywhere; }
 .note:target h3 { color: var(--navy-600); }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--navy-950); color: #c3cde0; padding: var(--s-6) 0 var(--s-6); font-size: 0.88rem; line-height: 1.6; }
+.site-footer { background: var(--navy-950); color: #c4d6d3; padding: var(--s-6) 0 var(--s-6); font-size: 0.88rem; line-height: 1.6; }
 .site-footer p { margin: 0 0 0.4rem; max-width: 60rem; }
 .site-footer p:first-child { font-family: var(--display); font-size: 1.05rem; color: #fff; margin-bottom: var(--s-3); }
 .site-footer a { color: #fff; text-decoration-color: rgba(255,255,255,.4); }
@@ -463,7 +463,7 @@ dl.contact dd { margin: 0; overflow-wrap: anywhere; }
 .hero-title .hero-fhea{font-family:Inter,system-ui,sans-serif;font-size:.28em;font-weight:600;letter-spacing:.12em;vertical-align:.9em;margin-left:.35em;opacity:.85}
 /* Hero contact strip (mirrors email signature) */
 .hero-contact{margin-top:var(--s-6);padding-top:var(--s-4);border-top:1px solid rgba(255,255,255,.16);max-width:46rem}
-.hc-role{margin:0 0 .75rem;font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#c9d6ee}
+.hc-role{margin:0 0 .75rem;font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#c5ddd9}
 .hc-role span{color:var(--gold-400);margin:0 .35em}
 .hc-links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
 .hc-links a{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .85rem;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:#fff;font-size:.9rem;text-decoration:none;background:rgba(255,255,255,.04);transition:background .2s,border-color .2s}
